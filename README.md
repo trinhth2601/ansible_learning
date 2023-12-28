@@ -1,9 +1,9 @@
 # Ansible Learning Repository
 This repository serves as a learning ground for exploring Ansible's capabilities. It contains customized roles derived from various sources, primarily obtained from Ansible Galaxy. The roles sourced from Ansible Galaxy were modified and tailored further to deepen understanding and proficiency in working with Ansible.
 
-### Roles Used and Customized:
+## Roles Used and Customized:
 
-### <span style="color:blue">self_custom_apache</span>
+### self_custom_apache
 
 This role, originally sourced from the [Geerlingguy Apache role on Ansible Galaxy](https://galaxy.ansible.com/ui/standalone/roles/geerlingguy/apache/), has undergone specific customizations within this repository:
 
