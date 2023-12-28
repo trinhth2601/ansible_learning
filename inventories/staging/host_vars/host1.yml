@@ -1,6 +1,0 @@
-myhosts:
-  hosts:
-    host_01:
-      ansible_host: 61.28.227.212
-      ansible_user: stackops
-      ansible_port: 234

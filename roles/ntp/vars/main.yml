@@ -1,3 +1,0 @@
-ntpserver:
-  - pool.ntp.org
-  - ntp.example.com
