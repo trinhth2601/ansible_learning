@@ -3,7 +3,7 @@ This repository serves as a learning ground for exploring Ansible's capabilities
 
 ### Roles Used and Customized:
 
-<span style="color:blue">self_custom_apache</span>
+### <span style="color:blue">self_custom_apache</span>
 
 This role, originally sourced from the [Geerlingguy Apache role on Ansible Galaxy](https://galaxy.ansible.com/ui/standalone/roles/geerlingguy/apache/), has undergone specific customizations within this repository:
 
