@@ -1,0 +1,7 @@
+- name: Deploy LAMP on web server01
+  hosts: webserver01
+  vars_files:
+    - vars/mysql.yml
+  become: yes
+  roles:
+    - mysql
