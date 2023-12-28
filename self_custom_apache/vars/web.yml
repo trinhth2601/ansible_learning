@@ -1,0 +1,9 @@
+apache_listen_port: 80
+apache_vhosts:
+  - servername: "home.com"
+    documentroot: "/var/www/html/home.com"
+
+  - servername: "payment.com"
+    documentroot: "/var/www/html/payment.com"
+
+
