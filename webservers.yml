@@ -1,0 +1,13 @@
+- name: Deploy NTP on web server01
+  hosts: webserver01
+  become: yes
+  roles:
+    - ntp
+
+- name: Deploy LAMP on web server01
+  hosts: webserver01
+  vars_files:
+    - vars/web.yml
+  become: yes
+  roles:
+    - apache
