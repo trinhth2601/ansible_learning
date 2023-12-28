@@ -1,43 +1,7 @@
-# Self Ansible Learning
+# Ansible Learning Repository
+This repository serves as a learning ground for exploring Ansible's capabilities. It contains customized roles derived from various sources, primarily obtained from Ansible Galaxy. The roles sourced from Ansible Galaxy were modified and tailored further to deepen understanding and proficiency in working with Ansible.
 
-
-## .htaccess-based Basic Authorization
-
-If you require Basic Auth support, you can add it either through a custom template, or by adding `extra_parameters` to a VirtualHost configuration, like so:
-
-    extra_parameters: |
-      <Directory "/var/www/password-protected-directory">
-        Require valid-user
-        AuthType Basic
-        AuthName "Please authenticate"
-        AuthUserFile /var/www/password-protected-directory/.htpasswd
-      </Directory>
-
-To password protect everything within a VirtualHost directive, use the `Location` block instead of `Directory`:
-
-    <Location "/">
-      Require valid-user
-      ....
-    </Location>
-
-You would need to generate/upload your own `.htpasswd` file in your own playbook. There may be other roles that support this functionality in a more integrated way.
-
-## Dependencies
-
-None.
-
-## Example Playbook
-
-    - hosts: webservers
-      vars_files:
-        - vars/main.yml
-      roles:
-        - { role: geerlingguy.apache }
-
-*Inside `vars/main.yml`*:
-
-    apache_listen_port: 8080
-    apache_vhosts:
-      - {servername: "example.com", documentroot: "/var/www/vhosts/example_com"}
-
+### Roles Used and Customized:
+#### [self_custom_apache](https://galaxy.ansible.com/ui/standalone/roles/geerlingguy/apache/)
+This role originates from the Geerlingguy Apache role on Ansible Galaxy. It was adapted and customized within this repository for specific project requirements, showcasing the process of extending and enhancing roles to suit individual needs.
 
